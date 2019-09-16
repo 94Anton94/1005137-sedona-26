@@ -98,14 +98,28 @@
       </ul>
     </section>
     <section>
-      <!-- <h2>Поиск гостиницы</h2> // скрытый заголовок -->
       <span>Заинтересовались?</span>
       <p>Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a href="#">Поиск гостиницы в седоне</a>
       <div>
-        <!-- <form> тут будет форма</form> -->
+        <form class="">
+          <!-- <h2 class="heading a11y-hidden">Поиск гостиницы</h2> -->
+          <label for="date">Дата заезда</label>
+          <input type="date" id="date" name="date-in" value="24 апреля 2017">
+          <div>
+          <label for="date">Дата выезда</label>
+          <input type="date" id="date" name="date-out" value="04 июля 2017"></div>
       </div>
+      <div>
+          <label for="amount">Взрослые</label>
+          <input type="number" min="0" step="1" id="amount" name="amount">
+      </div>
+      <div>
+          <label for="amount">Дети</label>
+          <input type="number" min="0" step="1" id="amount" name="amount">
+      </div>
+      <a href="">Найти</a>
     </section>
 
     <section>
