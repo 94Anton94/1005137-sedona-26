@@ -180,6 +180,35 @@ footer-copyright {
   line-height: 26px;
 }
 
+.title-hotel {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.button-detail {
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: #81b3d2;
+}
+
+.button-reservation {
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  background-color: #766357;
+}
+
 .visually-hidden {
   position: absolute;
   padding: 0;
