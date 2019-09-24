@@ -17,14 +17,12 @@
         <img src="img/logo.svg" width="100" height="50" alt="Логотип sedona">
       </a>
       <div class="main-navigator-wrapper">
-        <div class="container">
-          <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="photo and video.html">Фото и видео</a></li>
-            <li><a href="map state.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-          </ul>
-        </div>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo and video.html">Фото и видео</a></li>
+          <li><a href="map state.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -34,17 +32,18 @@
       <img class="intro-welcome" src="img/intro-welcome.svg" alt="Добро пожаловать в седону">
     </section>
     <section class="explain">
-      <h2>Седона - небольшой городок в аризоне,<br> заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      <h2 class="visually-hidden">Седона - небольшой городок в аризоне</h2>
+      <p class="main-text">Седона - небольшой городок в аризоне,<br> заслуживающий большего!</p>
+      <p class="addition">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </section>
     <!-- Информация об отелях -->
     <section class="feature">
       <div class="features-item-price1">
-        <h3 class="title">Настоящий городок</h3>
+        <h3 class="title1">Настоящий городок</h3>
         <span class="number">-№1-</span>
         <p class="option">Седона-не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <figure class="features-content">
+      <figure class="features-content-pavilion">
         <img src="img/pavilion.jpg" alt="">
       </figure>
 
@@ -81,16 +80,16 @@
       </ul>
     </section>
     <section class="feature">
-      <figure class="features-content">
+      <figure class="features-content-mountain">
         <img src="img/mountain.jpg" alt="">
       </figure>
       <div class="features-item-price1">
-        <h3 class="title">Там есть мост дьявола</h3>
+        <h3 class="title1">Там есть мост дьявола</h3>
         <span class="number">-№2-</span>
         <p class="option">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
     </section>
-    <section>
+    <section class="transfer">
       <ul class="features-list">
         <li class="features-item">
           <div class="features-item-price">
@@ -117,10 +116,11 @@
       </ul>
     </section>
     <section class="interes">
-      <h2>Заинтересовались?</h2>
-    <span>Укажите предполагаемые даты поездки,<br>
-      и мы покажем вам лучшие предложения гостиниц в седоне</span><br>
-    <button type="button" class="button-form-open">Поиск гостиницы в седоне</button>
+      <h2 class="visually-hidden">Бронирование</h2>
+      <p class="form-title">Заинтересовались?</p>
+      <span class="form-text">Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в седоне</span><br>
+      <button type="button" class="button-form-open">Поиск гостиницы в седоне</button>
     </section>
     <section class="form">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -177,8 +177,8 @@
         <li><a class="social-buttun" href="#">YouTube</a></li>
       </ul>
     </div>
-    <p clss="footer-copyright">
-      <b>website</b> <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg"></a>
+    <p class="footer-copyright">
+      <b>website</b> <a class="button-academy" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" height="41" width="115"></a>
     </p>
   </footer>
 </body>
