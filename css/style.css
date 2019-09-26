@@ -52,12 +52,6 @@ p {
   box-sizing: inherit;
 }
 
-.features-item-price1 {
-  background-color: #81b3d2;
-  text-align: center;
-  color: #ffffff;
-}
-
 .main-header-logo {
   width: 140px;
   height: 71px;
@@ -162,7 +156,28 @@ label {
   color: #000000;
 }
 
+.feature {
+  display: flex;
+}
+
+.features-item-price1 {
+
+  max-width: 400px;
+  background-color: #81b3d2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.features-item-price {
+  width: 400px;
+}
+
+.features-content-pavilion {
+  width: 800px;
+}
+
 .features-list {
+  display: flex;
   list-style: none;
 }
 
@@ -207,7 +222,13 @@ label {
   background-color: #81b3d2
 }
 
+.main-footer {
+  display: flex;
+
+}
+
 .footer-visits {
+  width: 140px;
   line-height: 26px;
   font-weight: bold;
   color: #000000
@@ -215,6 +236,7 @@ label {
 
 footer-copyright {
   line-height: 26px;
+  width: 200px;
 }
 
 .title-hotel {
@@ -248,6 +270,7 @@ footer-copyright {
 
 .fotter-social {
   display: flex;
+  width: 160px;
 }
 
 .fotter-social li:nth-last-child {
