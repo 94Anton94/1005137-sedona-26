@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -16,6 +16,7 @@ body {
   background-color: #ffffff;
   background-position: top center;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .container {
@@ -116,6 +117,7 @@ label {
 }
 
 .intro-welcome {
+  padding-top: 70px;
   width: 459px;
   height: 353px;
 }
@@ -161,7 +163,8 @@ label {
 }
 
 .features-item-price1 {
-
+  padding-left: 55px;
+  padding-right: 55px;
   max-width: 400px;
   background-color: #81b3d2;
   text-align: center;
@@ -174,6 +177,7 @@ label {
 
 .features-content-pavilion {
   width: 800px;
+  margin: 0;
 }
 
 .features-list {
