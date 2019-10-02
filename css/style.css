@@ -160,6 +160,28 @@ label {
 
 .feature {
   display: flex;
+  justify-content: space-between;
+}
+
+.feature1 {
+  display: flex;
+  background-repeat: no-repeat;
+  background-image: url(../img/pavilion.jpg);
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.feature2 {
+  display: flex;
+  flex-direction: row-reverse;
+  background-repeat: no-repeat;
+  background-image: url(../img/mountain.jpg);
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
 }
 
 .features-item-price1 {
@@ -173,15 +195,17 @@ label {
 
 .features-item-price {
   width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.features-content-pavilion {
-  width: 800px;
-  margin: 0;
+.option {
+  padding-top: 25px;
 }
 
 .features-list {
   display: flex;
+  flex-direction: row;
   list-style: none;
 }
 
@@ -222,25 +246,49 @@ label {
   background-color: #766357
 }
 
+.form {
+  display: block;
+  text-align: center;
+  width: 568px;
+  background-color: #ffffff;
+}
+
+.form-control {
+  display: flex;
+  width: 568px;
+}
+
 .button {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffffff;
+  width: 460px;
+
   background-color: #81b3d2
 }
 
 .main-footer {
   display: flex;
-
+  margin: auto;
+  justify-content: space-between;
 }
 
 .footer-visits {
   width: 140px;
   line-height: 26px;
   font-weight: bold;
-  color: #000000
+  color: #000000;
+  padding-left: 130px;
 }
 
-footer-copyright {
+.footer-copyright {
   line-height: 26px;
   width: 200px;
+  margin-right: 100px;
+  margin-bottom: 40px;
 }
 
 .title-hotel {
@@ -283,8 +331,8 @@ footer-copyright {
 
 .fotter-social li {
   width: 50px;
-  height: 50px;
-  background: blue;
+  height: 40px;
+  background: skyblue;
   position: relative;
   margin-right: 20px;
 }
