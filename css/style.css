@@ -247,7 +247,8 @@ label {
 }
 
 .form {
-  display: block;
+  /* display: block; */
+  text-transform: uppercase;
   text-align: center;
   width: 568px;
   background-color: #ffffff;
@@ -255,7 +256,16 @@ label {
 
 .form-control {
   display: flex;
+  justify-content: space-between;
   width: 568px;
+}
+
+.form-old {
+  display: flex;
+}
+
+.form-child {
+  display: flex;
 }
 
 .button {
@@ -268,6 +278,23 @@ label {
   width: 460px;
 
   background-color: #81b3d2
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.list-hotel {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-footer {
