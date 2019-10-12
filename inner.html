@@ -28,68 +28,79 @@
       </nav>
     </header>
     <main class="">
-      <form class="">
-        <div class="">
-          <fieldset class="">
-            <legend>Инфраструктура:</legend>
-            <ul class="">
-              <li>
-                <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
-              </li>
-              <li>
-                <input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li>
-                <input class="filter-checkbox visually-hidden" type="checkbox" name="wifi" id="wifi">
-                <label for="wifi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="">
-            <legend>Тип жилья:</legend>
-            <ul class="">
-              <li>
-                <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-              </li>
-              <li>
-                <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="motel" checked>
-                <label for="motel">Мотель</label>
-              </li>
-              <li>
-                <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="apparthments" checked>
-                <label for="apparthments">Аппартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div>
-          <!-- здесь будет форма-->
-        </div>
-      </form>
 
-      <section>
-        <span>
-          <h1>Найдено: 3</h1>
-        </span>
-        <span>
-          <h2>Сортировка:</h2>
-        </span>
-        <div>
-          <ul>
-            <li><button>по цене</button></li>
-            <li><button>по типу</button></li>
-            <li><button>по рейтингу</button></li>
-          </ul>
-        </div>
-        <ul>
-          <li><img src="img/background photo.jpg" width="1200" height="800" alt=""></li>
-        </ul>
+      <section class="">
+        <form class="hotel-welcome">
+          <div class="prestige">
+            <fieldset class="">
+              <legend>Инфраструктура:</legend>
+              <ul class="list">
+                <li>
+                  <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li>
+                  <input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li>
+                  <input class="filter-checkbox visually-hidden" type="checkbox" name="wifi" id="wifi">
+                  <label for="wifi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="">
+              <legend>Тип жилья:</legend>
+              <ul class="">
+                <li>
+                  <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li>
+                  <input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="apparthments" checked>
+                  <label for="apparthments">Аппартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+        </form>
       </section>
 
       <section class="">
+        <div class="search-hotel">
+          <span>
+            <h1>Найдено: 3</h1>
+          </span>
+          <span>
+            <h2>Сортировка:</h2>
+          </span>
+          <div>
+            <ul class="sorting">
+              <li><button>по цене</button></li>
+              <li><button>по типу</button></li>
+              <li><button>по рейтингу</button></li>
+            </ul>
+          </div>
+        </div>
         <h2 class="visually-hidden">Список отелей</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
