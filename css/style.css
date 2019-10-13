@@ -201,6 +201,9 @@ label {
 
 .option {
   padding-top: 25px;
+  padding-bottom: 70px;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 
 .features-list {
@@ -210,7 +213,9 @@ label {
 }
 
 .features-item {
-  text-align: center
+  text-align: center;
+  padding-top: 60px;
+
 }
 
 .interes {
@@ -247,25 +252,34 @@ label {
 }
 
 .form {
-  /* display: block; */
-  text-transform: uppercase;
   text-align: center;
+  display: block;
+  text-transform: uppercase;
   width: 568px;
   background-color: #ffffff;
+  list-style: none;
+  margin-left: 312px;
+  height: 396px;
 }
 
 .form-control {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 568px;
 }
 
-.form-old {
-  display: flex;
-}
-
-.form-child {
-  display: flex;
+.check-in-date-input {
+  margin-left: 18px;
+  width: 346px;
+  background: #f2f2f2;
+  border: none;
+  margin-bottom: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
 }
 
 .button {
