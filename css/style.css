@@ -302,9 +302,8 @@ label {
 .hotel-welcome {
   display: flex;
   justify-content: space-around;
-  background-image: url('../img/background photo.jpg');
-  background-size: unset;
-  background-repeat: no-repeat;
+  background: url('../img/background photo.jpg') no-repeat 50% 50%;
+  -webkit-filter: blur(10px);
   position: relative;
   min-height: 217px;
   padding-top: 30px;
@@ -531,6 +530,7 @@ input[type="checkbox"]:not(:checked)+label:after {
   flex-direction: row;
   justify-content: space-around;
   height: 150px;
+  align-items: center;
 }
 
 .list-hotel {
