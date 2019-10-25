@@ -102,37 +102,44 @@
         <p class="form-title">Заинтересовались?</p>
         <span class="form-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</span><br>
-        <button type="button" class="button-form-open">Поиск гостиницы в седоне</button>
-        <section class="form">
-          <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <form class="form-booking" action="" method="post">
-            <div class="form-control">
-              <div class="form-content">
-                <label class="check-in" for="check-in-date">Дата заезда:</label>
-                <input class="check-in-date-input" type="text" id="check-in-date" name="date"
-                  placeholder="24 апреля 2017">
-                <button class="form-calendar" type="button"></button>
+        <div class="form-hidden">
+          <button type="button" class="button-form-open">Поиск гостиницы в седоне</button>
+          <section class="form">
+            <h2 class="visually-hidden">Поиск гостиницы</h2>
+            <form class="form-booking" action="" method="post">
+              <div class="form-control">
+                <div class="form-content">
+                  <label class="check-in" for="check-in-date">Дата заезда:</label>
+                  <input class="check-in-date-input" type="text" id="check-in-date" name="date"
+                    placeholder="24 апреля 2017">
+                  <button class="form-calendar" type="button"></button>
+                </div>
+                <div class="form-content">
+                  <label class="check-out" for="check-out-date">Дата выезда:</label>
+                  <input type="text" class="check-in-date-input" id="check-out-date" name="date"
+                    placeholder="4 июля 2017">
+                  <button class="form-calendar" type="button"></button>
+                </div>
+                <div class="form-content">
+                  <label class="adults" for="adults">Взрослые:</label>
+                  <div class="form-content-number">
+                    <a class="form-count form-minus" href="#"></a>
+                    <input type="text" class="adults" id="adults" name="adults" value="2">
+                    <a class="form-count form-plus" href="#"></a></div>
+                  <label class="childs" for="child">Дети:</label>
+                  <div class="form-content-number">
+                    <a class="form-count form-minus" href="#"></a>
+                    <input type="text" class="child" id="child" name="child" value="0">
+                    <a class="form-count form-plus" href="#"></a>
+                  </div>
+                </div>
               </div>
-              <div class="form-content">
-                <label class="check-out" for="check-in-date">Дата выезда:</label>
-                <input type="text" class="check-in-date-input" id="check-in-date" name="date" placeholder="4 июля 2017">
-                <button class="form-calendar" type="button"></button>
-              </div>
-              <div class="form-content">
-                <label for="adult">Взрослые:</label>
-                <a class="form-minus" href="#"></a>
-                <input type="text" class="adults" id="adults" name="adults" value="2">
-                <a class="form-plus" href="#"></a>
-                <label for="child">Дети:</label>
-                <a class="form-minus" href="#"></a>
-                <input type="text" class="child" id="child" name="child" value="0">
-                <a class="form-plus" href="#"></a>
-              </div>
-            </div>
-            <button class="button" type="submit">Найти</button>
-          </form>
-        </section>
+              <button class="button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
       </section>
+
       <section>
         <img src="img/map.jpg" alt="Карта">
       </section>

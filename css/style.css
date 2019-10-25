@@ -123,7 +123,7 @@ li.site-navigation-item:nth-child(2) {
   background-repeat: no-repeat;
   position: relative;
   padding-top: 76px;
-  padding-bottom: 79px;
+  padding-bottom: 73px;
 }
 
 .intro-welcome {
@@ -145,7 +145,7 @@ li.site-navigation-item:nth-child(2) {
 .explain {
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 59px;
+  padding-bottom: 50px;
 }
 
 .main-text {
@@ -169,31 +169,33 @@ li.site-navigation-item:nth-child(2) {
   font-size: 21px;
   line-height: 21px;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 
 .feature {
   display: flex;
   margin: 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   background-color: #eeeeee;
 }
 
 .feature-img-city {
   background-image: url(../img/pavilion.jpg);
   background-position: center right;
+  width: 100%;
 }
 
 .feature-img-bridge {
   background-image: url(../img/mountain.jpg);
   background-position: center left;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  width: 100%;
 }
 
 .span.number {
-  display: inline-block;
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 19px;
 }
 
 .feature-color-white {
@@ -205,7 +207,7 @@ li.site-navigation-item:nth-child(2) {
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 46px;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -275,20 +277,44 @@ figure.features-icon {
   height: 396px;
   margin: 0 auto;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
 }
 
 .form-calendar {
   background-image: url(../img/calendar.svg);
   background-size: auto;
+  width: 21px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.32;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
 }
 
-.form-minus {
+label {
+  font-weight: 600;
+}
+
+.form-count {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 34px;
   height: 34px;
   border: none;
+  position: relative;
+  background: #f2f2f2;
+  vertical-align: middle;
+}
+
+.form-minus {
+  align-items: center;
+  justify-content: center;
 }
 
 .form-minus::before {
@@ -297,6 +323,7 @@ figure.features-icon {
   height: 3px;
   background: #a9a9a9;
   display: block;
+  margin: auto;
 }
 
 .form-plus {
@@ -304,7 +331,6 @@ figure.features-icon {
   width: 34px;
   height: 34px;
   border: none;
-  position: absolute;
 }
 
 .form-plus::after {
@@ -331,6 +357,38 @@ figure.features-icon {
   transform: translate(-50%, -50%);
 }
 
+.form-content {
+  margin-bottom: 28px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-content-number {
+  display: flex;
+  margin-left: 40px;
+}
+
+input#adults {
+  background: #f2f2f2;
+  border: none;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+
+input#child {
+  background: #f2f2f2;
+  border: none;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+}
+
+.childs {
+  margin-left: auto;
+}
+
 .form-control {
   display: flex;
   flex-direction: column;
@@ -338,26 +396,26 @@ figure.features-icon {
 }
 
 .check-in-date-input {
-  margin-left: 18px;
+  margin-left: auto;
   width: 346px;
   background: #f2f2f2;
   border: none;
-  margin-bottom: 28px;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 12px;
+  padding-left: 14px;
 }
 
 .button {
   text-align: center;
   text-transform: uppercase;
   font-size: 21px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 17px;
+  padding-bottom: 22px;
   color: #ffffff;
   width: 460px;
+  border: 2px solid transparent;
 
   background-color: #81b3d2
 }
@@ -365,9 +423,11 @@ figure.features-icon {
 .hotel-welcome {
   display: flex;
   justify-content: space-around;
-  background: url('../img/background photo.jpg') no-repeat 50% 50%;
-  -webkit-filter: blur(10px);
+  background: url('../img/background photo.jpg') no-repeat 0 -57px;
+  background-color: rgba(115,87,78,0.6);
+  /* -webkit-filter: blur(10px); */
   position: relative;
+  color: #ffffff;
   min-height: 217px;
   padding-top: 30px;
 }
@@ -376,6 +436,10 @@ figure.features-icon {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.check-infrastructure {
+  border: none;
 }
 
 .list li {
@@ -437,7 +501,7 @@ input[type="checkbox"]:not(:checked)+label:after {
   display: flex;
 }
 
-.search-hotel {
+.results-wrapper {
   display: flex;
   justify-content: flex-start;
 }
