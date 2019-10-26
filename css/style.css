@@ -48,6 +48,12 @@ p {
   padding: 0;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
 *,
 *::before,
 *::after {
@@ -270,6 +276,7 @@ figure.features-icon {
 .title-hotel {
   font-size: 21px;
   line-height: 26px;
+  margin: auto;
 }
 
 .button-detail {
@@ -507,11 +514,6 @@ input#child {
   justify-content: flex-start;
 }
 
-.sorting {
-  display: flex;
-  flex-direction: row;
-}
-
 .filter-range {
   width: 330px;
   color: #ffffff;
@@ -635,9 +637,75 @@ input#child {
   background: #ffffff;
 }
 
-.results-wrapper {
+.sorting-wrapper {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 87px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.found-result {
+  display: flex;
+  align-items: center;
+}
+
+.total-result {
+  font-size: 21px;
+  font-weight: bold;
+  margin-left: 72px;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+.sorting li {
+  display: inline-block;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-right: 33px;
+  text-decoration-style: dotted;
+}
+
+.sorting a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort {
+  font-size: 12px;
+  margin-left: 49px;
+}
+
+.sorting-type {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 200px;
+}
+
+.sorting-type-list {
+  margin-right: 60px;
+}
+
+.sorting-type-list li{
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.arrow-svg {
+  fill: #cacaca;
+}
+
+.arrow-svg:hover {
+  fill: #000000;
+}
+
+.active {
+  fill: #81b3d2;
 }
 
 .catalog-list {
@@ -650,19 +718,48 @@ input#child {
 .catalog-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 150px;
-  align-items: center;
+  padding: 25px 72px 30px 72px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.catalog-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.photo-hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.img-hotel {
+  width: 135px;
+  height: 90px;
 }
 
 .list-hotel {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
+  justify-content: space-between;
+  margin-left: 30px;
 }
 
-.hotel-rating {
-  padding-left: 538px;
+.hotel-rating-stars {
+  width: 207px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.total-rating {
+  background-color: #f2f2f2;
+  padding: 5px 13px 6px 15px;
+  line-height: 16px;
 }
 
 .footer {
