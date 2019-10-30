@@ -19,10 +19,10 @@
         </a>
         <div class="main-navigator-wrapper">
           <ul class="site-navigation">
-            <li class="site-navigation-item site-navigation-item-current"><a href="info.html">Информация</a></li>
-            <li class="site-navigation-item"><a href="photo and video.html">Фото и видео</a></li>
-            <li class="site-navigation-item"><a href="map state.html">Карта штата</a></li>
-            <li class="site-navigation-item"><a href="inner.html">Гостиницы</a></li>
+            <li class="site-navigation-item "><a href="info.html">Информация</a></li>
+            <li class="site-navigation-item"><a href="photo-and-video.html">Фото и видео</a></li>
+            <li class="site-navigation-item"><a href="map-state.html">Карта штата</a></li>
+            <li class="site-navigation-item site-navigation-item-current"><a href="inner.html">Гостиницы</a></li>
           </ul>
         </div>
       </nav>
@@ -47,22 +47,22 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="check-infrastructure"">
-              <legend>Тип жилья:</legend>
-              <ul class=" list">
-            <li>
-              <input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
-            </li>
-            <li>
-              <input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
-              <label for="motel">Мотель</label>
-            </li>
-            <li>
-              <input class="filter-checkbox visually-hidden" type="checkbox" name="apparthments" id="apparthments"
-                checked>
-              <label for="apparthments">Аппартаменты</label>
-            </li>
+          <fieldset class="check-infrastructure">
+            <legend>Тип жилья:</legend>
+            <ul class=" list">
+              <li>
+                <input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input class="filter-checkbox visually-hidden" type="checkbox" name="apparthments" id="apparthments"
+                  checked>
+                <label for="apparthments">Аппартаменты</label>
+              </li>
             </ul>
           </fieldset>
         </div>
@@ -87,9 +87,9 @@
           <span class="total-result">Найдено: 3</span>
           <span class="sort">Сортировка:</span>
           <ul class="sorting">
-            <li><a href="#" aria-label="Сортировать по цене">по цене</button></li>
-            <li><a href="#" aria-label="Сортировать по типу">по типу</button></li>
-            <li><a href="#" aria-label="Сортировать по рейтингу">по рейтингу</button></li>
+            <li class="sorting-item sorting-item-current"><a href="#" aria-label="Сортировать по цене">по цене</a></li>
+            <li class="sorting-item"><a href="#" aria-label="Сортировать по типу">по типу</a></li>
+            <li class="sorting-item"><a href="#" aria-label="Сортировать по рейтингу">по рейтингу</a></li>
           </ul>
         </div>
         <div class="sorting-type">
@@ -123,83 +123,113 @@
                   <span>Гостиница</span>
                   <span>от 4000 р.</span>
                 </div>
-                  <div>
-                    <button class="button-detail">Подробнее</button>
-                    <button class="button-reservation">Забронировать</button>
-                  </div>
+                <div>
+                  <button class="button-detail">Подробнее</button>
+                  <button class="button-reservation">Забронировать</button>
+                </div>
               </div>
             </div>
             <div class="catalog-right">
               <div class="hotel-rating-stars">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" aria-label="Рейтинг отеля 4 звезды"></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"></svg>
+                <span class="star">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                      aria-label="Рейтинг отеля 4 звезды">
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z">
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z">
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z">
+                  </svg>
                 </span>
                 <span class="total-rating">Рейтинг: 8,5</span>
               </div>
             </div>
           </li>
           <li class="catalog-item">
-              <div class="catalog-left">
-                <div class="photo-hotel">
-                  <img class="img-hotel" src="img/desert.jpg" alt="Фото desert">
+            <div class="catalog-left">
+              <div class="photo-hotel">
+                <img class="img-hotel" src="img/desert.jpg" alt="Фото desert">
+              </div>
+              <div class="list-hotel">
+                <div>
+                  <h3 class="title-hotel">desert quail inn</h3>
                 </div>
-                <div class="list-hotel">
-                  <div>
-                    <h3 class="title-hotel">desert quail inn</h3>
-                  </div>
-                  <div>
-                    <span>Мотель</span>
-                    <span>от 3000 р.</span>
-                  </div>
-                    <div>
-                      <button class="button-detail">Подробнее</button>
-                      <button class="button-reservation">Забронировать</button>
-                    </div>
+                <div>
+                  <span>Мотель</span>
+                  <span>от 3000 р.</span>
+                </div>
+                <div>
+                  <button class="button-detail">Подробнее</button>
+                  <button class="button-reservation">Забронировать</button>
                 </div>
               </div>
-              <div class="catalog-right">
-                <div class="hotel-rating-stars">
-                  <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" aria-label="Рейтинг отеля 3 звезды"></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"></svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"></svg>
-                  </span>
-                  <span class="total-rating">Рейтинг: 8,9</span>
+            </div>
+            <div class="catalog-right">
+              <div class="hotel-rating-stars">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                      aria-label="Рейтинг отеля 3 звезды">
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z">
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z">
+                  </svg>
+                </span>
+                <span class="total-rating">Рейтинг: 8,9</span>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-left">
+              <div class="photo-hotel">
+                <img class="img-hotel" src="img/villas.jpg" alt="Фото villas">
+              </div>
+              <div class="list-hotel">
+                <div>
+                  <h3 class="title-hotel">villas at poco diablo</h3>
+                </div>
+                <div>
+                  <span>Аппартаменты</span>
+                  <span>от 2000 р.</span>
+                </div>
+                <div>
+                  <button class="button-detail">Подробнее</button>
+                  <button class="button-reservation">Забронировать</button>
                 </div>
               </div>
-            </li>
-            <li class="catalog-item">
-                <div class="catalog-left">
-                  <div class="photo-hotel">
-                    <img class="img-hotel" src="img/villas.jpg" alt="Фото villas">
-                  </div>
-                  <div class="list-hotel">
-                    <div>
-                      <h3 class="title-hotel">villas at poco diablo</h3>
-                    </div>
-                    <div>
-                      <span>Аппартаменты</span>
-                      <span>от 2000 р.</span>
-                    </div>
-                      <div>
-                        <button class="button-detail">Подробнее</button>
-                        <button class="button-reservation">Забронировать</button>
-                      </div>
-                  </div>
-                </div>
-                <div class="catalog-right">
-                  <div class="hotel-rating-stars">
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z" aria-label="Рейтинг отеля 2 звезды"></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"></svg>
-                    </span>
-                    <span class="total-rating">Рейтинг: 9,2</span>
-                  </div>
-                </div>
-              </li>
+            </div>
+            <div class="catalog-right">
+              <div class="hotel-rating-stars">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"
+                      aria-label="Рейтинг отеля 2 звезды">
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+                    <path fill="#81B3D2"
+                      d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z">
+                  </svg>
+                </span>
+                <span class="total-rating">Рейтинг: 9,2</span>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
@@ -219,9 +249,9 @@
         </div>
         <div class="footer-col">
           <p class="footer-copyright">
-            <b>website</b>
-            <a class="button-academy" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" height="41"
-                width="115"></a>
+            <b>Website by</b>
+            <a class="button-academy" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg"
+                alt="логотип HTML" height="41" width="115"></a>
           </p>
         </div>
       </div>
