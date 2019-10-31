@@ -64,6 +64,7 @@ button {
   width: 140px;
   height: 71px;
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -111,7 +112,6 @@ label {
   display: flex;
   justify-content: space-between;
   text-align: center;
-
   list-style: none;
 }
 
@@ -124,7 +124,7 @@ li.site-navigation-item:nth-child(2) {
 }
 
 .welcome {
-  background-image: url('../img/background-photo.jpg');
+  background-image: url(../img/background-photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -142,7 +142,7 @@ li.site-navigation-item:nth-child(2) {
 .welcome::after {
   content: "";
   display: block;
-  background-image: url('../img/intro-mask.svg');
+  background-image: url(../img/intro-mask.svg);
   position: absolute;
   height: 57px;
   width: 100%;
@@ -221,6 +221,7 @@ span.number {
   padding-top: 48px;
   padding-bottom: 60px;
   text-align: center;
+  color: #000000;
 }
 
 .features-item-color {
@@ -258,10 +259,24 @@ figure.features-icon {
   margin-bottom: 24px;
 }
 
+.option {
+  color: #333333;
+}
+
+.option-white {
+  color: #ffffff;
+}
+
 .form-text {
   line-height: 24px;
+  max-width: 484px;
   margin-bottom: 47px;
   display: inline-block;
+  vertical-align: top;
+}
+
+.form-hidden {
+  position: relative;
 }
 
 .button-form-open {
@@ -335,6 +350,7 @@ figure.features-icon {
 
 .form-content label {
   font-weight: 600;
+  color: #000000;
   letter-spacing: 0.5px;
   text-align: left;
 }
@@ -365,6 +381,7 @@ figure.features-icon {
 
 .form-plus {
   display: inline-block;
+  vertical-align: top;
   width: 38px;
   height: 38px;
   border: none;
@@ -421,6 +438,7 @@ figure.features-icon {
 input#adults {
   background: #f2f2f2;
   border: none;
+  font-weight: bold;
   width: 38px;
   height: 38px;
   text-align: center;
@@ -429,6 +447,7 @@ input#adults {
 input#child {
   background: #f2f2f2;
   border: none;
+  font-weight: bold;
   width: 38px;
   height: 38px;
   text-align: center;
@@ -448,6 +467,7 @@ input#child {
   margin-left: auto;
   width: 346px;
   background: #f2f2f2;
+  color: #000000;
   border: none;
   font-weight: 700;
   text-transform: uppercase;
@@ -464,6 +484,7 @@ input#child {
   text-align: center;
   text-transform: uppercase;
   font-size: 21px;
+  font-weight: bold;
   padding-top: 15px;
   padding-bottom: 14px;
   color: #ffffff;
@@ -479,7 +500,7 @@ input#child {
 .hotel-welcome {
   display: flex;
   justify-content: space-between;
-  background-image: url('../img/filter-background.jpg');
+  background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
   background-color: lightslategrey;
   background-position: center;
@@ -689,6 +710,7 @@ input#child {
 
 .sorting li {
   display: inline-block;
+  vertical-align: top;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.3);
   margin-right: 33px;
@@ -730,6 +752,7 @@ input#child {
 
 .sorting-type-list li {
   display: inline-block;
+  vertical-align: top;
   margin-right: 12px;
 }
 
@@ -774,6 +797,7 @@ input#child {
   font-weight: bold;
   color: #ffffff;
   display: inline-block;
+  vertical-align: top;
   padding-bottom: 5px;
   padding-top: 5px;
   padding-left: 18px;
@@ -795,6 +819,7 @@ input#child {
   font-weight: bold;
   color: #ffffff;
   display: inline-block;
+  vertical-align: top;
   padding-bottom: 5px;
   padding-top: 5px;
   padding-left: 17px;
@@ -857,6 +882,7 @@ input#child {
 
 .total-rating {
   background-color: #f2f2f2;
+  color: #000000;
   padding: 5px 13px 6px 15px;
   line-height: 16px;
 }
@@ -889,6 +915,7 @@ input#child {
 .footer-copyright {
   line-height: 26px;
   display: flex;
+  font-weight: normal;
   align-items: center;
   justify-content: center;
 }
