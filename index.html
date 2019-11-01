@@ -30,17 +30,18 @@
     <main>
       <section class="welcome">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="intro-welcome" width="459px" height="353px" src="img/intro-welcome.svg" alt="Добро пожаловать в седону">
+        <img class="intro-welcome" width="459px" height="353px" src="img/intro-welcome.svg"
+          alt="Добро пожаловать в седону">
       </section>
       <section class="explain">
         <h2 class="visually-hidden">Седона - небольшой городок в аризоне</h2>
-        <p class="main-text">Седона — небольшой городок в Аризоне,<br/> заслуживающий большего!</p>
+        <p class="main-text">Седона — небольшой городок в Аризоне,<br /> заслуживающий большего!</p>
         <p class="addition">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       </section>
       <!-- Информация об отелях -->
       <section class="feature feature-img-city">
         <div class="features-item features-item-color">
-          <h3 class="features-title">Настоящий<br/>городок</h3>
+          <h3 class="features-title">Настоящий<br />городок</h3>
           <span class="number">— №1 —</span>
           <p class="option option-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
@@ -72,7 +73,7 @@
       </section>
       <section class="feature feature-img-bridge">
         <div class="features-item features-item-color">
-          <h3 class="features-title">Там есть<br/>мост дьявола</h3>
+          <h3 class="features-title">Там есть<br />мост дьявола</h3>
           <span class="number">— №2 —</span>
           <p class="option option-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
@@ -80,18 +81,18 @@
       <section class="transfer">
         <ul class="features-list">
           <li class="features-item">
-            <h3 class="features-title">Небольшая<br/>площадь</h3>
+            <h3 class="features-title">Небольшая<br />площадь</h3>
             <span class="number">— №3 —</span>
-            <p class="option">Все достопреммечательности<br/> находятся очень близко</p>
+            <p class="option">Все достопреммечательности<br /> находятся очень близко</p>
 
           </li>
           <li class="features-item">
-            <h3 class="features-title">Красивая<br/>дорога</h3>
+            <h3 class="features-title">Красивая<br />дорога</h3>
             <span class="number">— №4 —</span>
-            <p class="option">Ехать в Седону из Лас-Вегаса совсем<br/> не скучно!</p>
+            <p class="option">Ехать в Седону из Лас-Вегаса совсем<br /> не скучно!</p>
           </li>
           <li class="features-item">
-            <h3 class="features-title">Мало<br/>туристов</h3>
+            <h3 class="features-title">Мало<br />туристов</h3>
             <span class="number">— №5 —</span>
             <p class="option">Большинство едет в Гранд каньон<br> и толпится там</p>
           </li>
@@ -100,24 +101,23 @@
       <section class="interes">
         <h2 class="visually-hidden">Бронирование</h2>
         <p class="form-title">Заинтересовались?</p>
-        <span class="form-text">Укажите предполагаемые даты поездки,<br/>
+        <span class="form-text">Укажите предполагаемые даты поездки,<br />
           и мы покажем вам лучшие предложения гостиниц в седоне</span>
         <div class="form-hidden">
-          <button type="button" aria-label="Открыть форму поиска" class="button-form-open">Поиск гостиницы в седоне</button>
+          <button type="button" aria-label="Открыть форму поиска" class="button-form-open">Поиск гостиницы в
+            седоне</button>
           <section class="form">
             <h2 class="visually-hidden">Поиск гостиницы</h2>
             <form class="form-booking" action="#" method="post">
               <div class="form-control">
                 <div class="form-content">
                   <label class="check-in" for="check-in-date">Дата заезда:</label>
-                  <input class="check-in-date-input" type="text" id="check-in-date" name="date"
-                    value="24 апреля 2017">
+                  <input class="check-in-date-input" type="text" id="check-in-date" name="date" value="24 апреля 2017">
                   <button class="form-calendar" type="button"></button>
                 </div>
                 <div class="form-content form-content-margin-middle">
                   <label class="check-out" for="check-out-date">Дата выезда:</label>
-                  <input type="text" class="check-in-date-input" id="check-out-date" name="date"
-                    value="4 июля 2017">
+                  <input type="text" class="check-in-date-input" id="check-out-date" name="date" value="4 июля 2017">
                   <button class="form-calendar" aria-label="Открыть календарь" type="button"></button>
                 </div>
                 <div class="form-content form-content-margin-big">
@@ -168,6 +168,18 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    var button = document.querySelector(".button-form-open");
+    var form = document.querySelector(".form");
+
+    button.addEventListener("click", function (evt) {
+
+      form.classList.toggle("active-form");
+    });
+
+  </script>
+
 </body>
 
 </html>
