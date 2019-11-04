@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container main-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -67,7 +66,7 @@
       </section>
       <section class="feature feature-img-bridge">
         <div class="features-item features-item-color">
-          <h3 class="features-title">Там есть мост дьявола</h3>
+          <h3 class="features-title">Там есть мост&nbsp;дьявола</h3>
           <span class="number">— №2 —</span>
           <p class="option option-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
@@ -77,18 +76,18 @@
           <li class="features-item">
             <h3 class="features-title">Небольшая площадь</h3>
             <span class="number">— №3 —</span>
-            <p class="option">Все достопреммечательности находятся очень близко</p>
+            <p class="option">Все достопреммечательности находятся&nbsp;очень близко</p>
 
           </li>
           <li class="features-item">
             <h3 class="features-title">Красивая дорога</h3>
             <span class="number">— №4 —</span>
-            <p class="option">Ехать в Седону из Лас-Вегаса совсем&nbsp;не скучно!</p>
+            <p class="option">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
           </li>
           <li class="features-item">
             <h3 class="features-title">Мало туристов</h3>
             <span class="number">— №5 —</span>
-            <p class="option">Большинство едет в Гранд каньон&nbsp;и толпится там</p>
+            <p class="option">Большинство едет в Гранд каньон и&nbsp;толпится там</p>
           </li>
         </ul>
       </section>
@@ -102,28 +101,42 @@
             седоне</button>
           <section class="form">
             <h2 class="visually-hidden">Поиск гостиницы</h2>
-            <form class="form-booking" action="#" method="post">
+            <form class="form-booking" action="https://echo.htmlacademy.ru" method="GET">
               <div class="form-control">
                 <div class="form-content">
                   <label class="check-in" for="check-in-date">Дата заезда:</label>
                   <input class="check-in-date-input" type="text" id="check-in-date" name="date" value="24 апреля 2017">
-                  <button class="form-calendar" type="button" aria-label="Открыть календарь"></button>
+                  <button class="form-calendar" type="button" aria-label="Открыть календарь">
+                    <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                      viewBox="0 0 21 22">
+                      <path
+                        d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                      <path
+                        d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                    </svg></button>
                 </div>
                 <div class="form-content form-content-margin-middle">
                   <label class="check-out" for="check-out-date">Дата выезда:</label>
                   <input type="text" class="check-in-date-input" id="check-out-date" name="date" value="4 июля 2017">
-                  <button class="form-calendar" type="button" aria-label="Открыть календарь"></button>
+                  <button class="form-calendar" type="button" aria-label="Открыть календарь">
+                    <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                      viewBox="0 0 21 22">
+                      <path
+                        d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                      <path
+                        d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                    </svg></button>
                 </div>
                 <div class="form-content form-content-margin-big">
                   <label class="adults" for="adults">Взрослые:</label>
                   <div class="form-content-number">
                     <a class="form-count form-minus" href="#" aria-label="Уменьшить колличество взрослых"></a>
-                    <input type="number" class="adults" id="adults" name="adults" value="2">
+                    <input type="text" class="adults" id="adults" name="adults" value="2">
                     <a class="form-count form-plus" href="#" aria-label="Увеличить колличество взрослых"></a></div>
                   <label class="childs" for="child">Дети:</label>
                   <div class="form-content-number">
                     <a class="form-count form-minus" href="#" aria-label="Уменьшить колличество детей"></a>
-                    <input type="number" class="child" id="child" name="child" value="0">
+                    <input type="text" class="child" id="child" name="child" value="0">
                     <a class="form-count form-plus" href="#" aria-label="Увеличить колличество детей"></a>
                   </div>
                 </div>
@@ -167,7 +180,7 @@
       </div>
     </footer>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 
 </body>
 

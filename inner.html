@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
+  <div class="container main-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a href="./index.html" class="main-header-logo">
@@ -69,8 +68,8 @@
         <div class="filter-range">
           <div class="filter-range-title">Стоимость в сутки (р):</div>
           <div class="price-controls">
-            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
           </div>
           <div class="range-controls">
             <div class="scale">
@@ -116,16 +115,18 @@
                 <img class="img-hotel" width="135px" height="90px" src="img/amara-resort.jpg" alt="Фото amara resort">
               </div>
               <div class="list-hotel">
-                <div>
+                <div class="title-hotel-wrap">
                   <h3 class="title-hotel">amara resort & spa</h3>
                 </div>
-                <div>
-                  <span>Гостиница</span>
-                  <span>от 4000 р.</span>
-                </div>
-                <div>
-                  <a class="button-detail">Подробнее</a>
-                  <a class="button-reservation">Забронировать</a>
+                <div class="button-wrap">
+                  <div class="hotel-type">
+                    <span>Гостиница</span>
+                    <a class="button-detail btn">Подробнее</a>
+                  </div>
+                  <div class="hotel-price">
+                    <span>от 4000 р.</span>
+                    <a class="button-reservation btn">Забронировать</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,16 +161,18 @@
                 <img class="img-hotel" width="135px" height="90px" src="img/desert.jpg" alt="Фото desert">
               </div>
               <div class="list-hotel">
-                <div>
+                <div class="title-hotel-wrap">
                   <h3 class="title-hotel">desert quail inn</h3>
                 </div>
-                <div>
-                  <span>Мотель</span>
-                  <span>от 3000 р.</span>
-                </div>
-                <div>
-                  <a class="button-detail">Подробнее</a>
-                  <a class="button-reservation">Забронировать</a>
+                <div class="button-wrap">
+                  <div class="hotel-type">
+                    <span>Мотель</span>
+                    <a class="button-detail btn">Подробнее</a>
+                  </div>
+                  <div class="hotel-price">
+                    <span>от 3000 р.</span>
+                    <a class="button-reservation btn">Забронировать</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -200,16 +203,18 @@
                 <img class="img-hotel" width="135px" height="90px" src="img/villas.jpg" alt="Фото villas">
               </div>
               <div class="list-hotel">
-                <div>
+                <div class="title-hotel-wrap">
                   <h3 class="title-hotel">villas at poco diablo</h3>
                 </div>
-                <div>
-                  <span>Аппартаменты</span>
-                  <span>от 2000 р.</span>
-                </div>
-                <div>
-                  <a class="button-detail">Подробнее</a>
-                  <a class="button-reservation">Забронировать</a>
+                <div class="button-wrap">
+                  <div class="hotel-type">
+                    <span>Аппартаменты</span>
+                    <a class="button-detail btn">Подробнее</a>
+                  </div>
+                  <div class="hotel-price">
+                    <span>от 2000 р.</span>
+                    <a class="button-reservation btn">Забронировать</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,7 +238,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-static">
       <div class="footer-col">
         <p class="footer-visits">
           #VISITSEDONA

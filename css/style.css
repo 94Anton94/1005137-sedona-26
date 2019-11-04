@@ -4,18 +4,17 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  background-color: #f2f2f2;
+}
 
+.main-page {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color: #333333;
   text-transform: uppercase;
-
-  background-color: #ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: #fff;
 }
 
 .container {
@@ -24,11 +23,11 @@ body {
   padding: 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  position: relative;
 }
 
 .main-header {
   position: relative;
-  padding: 15px 0;
 }
 
 a {
@@ -110,17 +109,26 @@ label {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  flex-wrap: wrap;
+  margin: 0;
   list-style: none;
+  padding: 0 72px;
 }
 
 .site-navigation-item {
-  width: 239px;
+  width: 23%;
+  text-align: left;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
-li.site-navigation-item:nth-child(2) {
-  margin-right: 244px;
+.site-navigation li:nth-child(4n + 3) {
+  margin-left: auto;
+  text-align: right;
+}
+
+.site-navigation li:nth-child(4n + 4) {
+  text-align: right;
 }
 
 .welcome {
@@ -163,7 +171,7 @@ li.site-navigation-item:nth-child(2) {
   font-weight: bold;
   color: #000000;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .addition {
@@ -178,9 +186,13 @@ li.site-navigation-item:nth-child(2) {
   line-height: 21px;
   margin-top: 0;
   margin-bottom: 24px;
-  width: 180px;
+  width: 160px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.features-title-color {
+  width: 180px;
 }
 
 .feature {
@@ -307,11 +319,6 @@ span.number {
   background-color: #503e33;
 }
 
-.title-hotel {
-  font-size: 21px;
-  line-height: 26px;
-  margin: auto;
-}
 
 .form {
   text-align: center;
@@ -337,32 +344,35 @@ span.number {
   top: 100%;
   opacity: 1;
   transition: top 0.5s, opacity 0.1s;
-
 }
 
 .form-calendar {
-  background-image: url(../img/calendar.svg);
   background-size: auto;
-  width: 21px;
-  height: 22px;
+  /*width: 21px;
+  height: 22px;*/
   background-color: transparent;
   border: none;
-  opacity: 0.32;
   cursor: pointer;
   position: absolute;
   top: 50%;
-  right: 8px;
+  right: 3px;
   transform: translateY(-50%);
+  outline: none;
 }
 
-.form-calendar:hover {
-  opacity: inherit;
+.calendar-icon {
+  fill: #cacaca;
 }
 
-.form-calendar:focus {
+.form-calendar:hover .calendar-icon {
+  fill: #000;
+}
+
+.form-calendar:active .calendar-icon,
+.form-calendar:focus .calendar-icon {
   fill: #81b3d2;
-  opacity: inherit;
 }
+
 
 .form-content label {
   font-weight: 600;
@@ -386,13 +396,24 @@ span.number {
   justify-content: center;
 }
 
-.form-minus:before {
+.form-minus::before {
   content: "";
   width: 13px;
   height: 3px;
   background: #a9a9a9;
   display: block;
-  margin: auto;
+}
+
+.form-minus:hover::before,
+.form-plus:hover::after,
+.form-plus:hover::before {
+  background: #000;
+}
+
+.form-minus:active::before,
+.form-plus:active::after,
+.form-plus:active::before {
+  background: #81b3d2;
 }
 
 .form-plus {
@@ -428,14 +449,14 @@ span.number {
 }
 
 .form-content {
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   position: relative;
   display: flex;
   align-items: center;
 }
 
 .form-content-margin-middle {
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 }
 
 .form-content-margin-big {
@@ -491,6 +512,7 @@ input#child {
   padding-bottom: 11px;
   padding-left: 14px;
   outline: none;
+  border: 2px solid transparent;
 }
 
 .check-in-date-input:hover {
@@ -540,6 +562,11 @@ input#child {
   padding: 0;
   margin: 0;
   margin-right: 120px;
+  max-width: 40%;
+}
+
+.check-infrastructure:last-child {
+  margin-right: 0;
 }
 
 .check-infrastructure legend {
@@ -559,6 +586,7 @@ input#child {
   position: relative;
   padding-left: 40px;
   cursor: pointer;
+  display: inline-block;
 }
 
 .filter-checkbox+label::after {
@@ -596,9 +624,10 @@ input#child {
 }
 
 .filter-range {
-  width: 314px;
+  width: 316px;
   color: #ffffff;
   text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .filter-range-title {
@@ -637,9 +666,12 @@ input#child {
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 75px;
 }
 
 .price-controls input {
@@ -816,8 +848,8 @@ input#child {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 150px;
-  padding: 25px 72px 30px 72px;
+  min-height: 150px;
+  padding: 25px 72px 24px 72px;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -873,7 +905,8 @@ input#child {
 .photo-hotel {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .img-hotel {
@@ -886,10 +919,44 @@ input#child {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 30px;
+  padding-right: 40px;
+}
+
+.title-hotel-wrap {
+  margin-bottom: 11px;
+}
+
+.button-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
+
+.btn:last-child {
+  margin-right: 0;
 }
 
 .title-hotel {
+  font-size: 21px;
+  line-height: 26px;
+  margin: auto;
   color: #000000;
+  letter-spacing: 0.4px;
+}
+
+.hotel-price,
+.hotel-type {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6px;
+}
+
+.hotel-price span,
+.hotel-type span {
+  margin-bottom: 8px;
 }
 
 .title-hotel:hover {
@@ -901,7 +968,7 @@ input#child {
 }
 
 .hotel-rating-stars {
-  width: 207px;
+  max-width: 120px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -925,6 +992,15 @@ input#child {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(254, 254, 254, 0.9);
+}
+
+.footer-static {
+  position: static;
 }
 
 .footer-col {
@@ -949,6 +1025,8 @@ input#child {
 
 .button-academy {
   margin-left: 8px;
+  margin-top: 8px;
+  .form-minus: before
 }
 
 .social {
