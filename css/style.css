@@ -536,6 +536,16 @@ input#child {
   background-color: #81b3d2
 }
 
+.button:hover {
+  background-color: #669ec0
+}
+
+.button:active,
+.button:focus {
+  background: #5496bd;
+  opacity: 0.5;
+}
+
 .map {
   height: 593px;
 }
