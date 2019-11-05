@@ -30,29 +30,6 @@ body {
   position: relative;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  background: none;
-}
-
 *,
 *::before,
 *::after {
@@ -71,17 +48,6 @@ button {
   top: 0;
 }
 
-img {
-  display: inline-block;
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: top;
-}
-
-label {
-  cursor: pointer;
-}
-
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -93,6 +59,7 @@ label {
 
 .site-navigation a {
   color: #000000;
+  text-decoration: none;
 }
 
 .site-navigation a:hover {
@@ -135,6 +102,7 @@ label {
   background-image: url(../img/background-photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
   position: relative;
   padding-top: 79px;
   padding-bottom: 77px;
@@ -186,7 +154,7 @@ label {
   line-height: 21px;
   margin-top: 0;
   margin-bottom: 24px;
-  width: 160px;
+  width: 155px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -200,7 +168,7 @@ label {
   margin: 0;
   background-repeat: no-repeat;
   background-size: auto;
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
 }
 
 .feature-img-city {
@@ -472,26 +440,27 @@ span.number {
   margin-left: 22px;
 }
 
-input#adults {
+.adult,
+.child {
   background: #f2f2f2;
   border: none;
   font-weight: bold;
   width: 38px;
   height: 38px;
   text-align: center;
+  border: 2px solid transparent;
+  outline: none;
 }
 
-input#child {
-  background: #f2f2f2;
-  border: none;
-  font-weight: bold;
-  width: 38px;
-  height: 38px;
-  text-align: center;
+.adult:focus,
+.child:focus {
+  border: 2px solid #e5e5e5;
+  background: #fff;
 }
 
-.childs {
-  margin-left: auto;
+.adult:hover,
+.child:hover {
+  background: #ebebeb;
 }
 
 .form-control {
@@ -521,6 +490,7 @@ input#child {
 
 .check-in-date-input:focus {
   border: 2px solid #e5e5e5;
+  background: #fff;
 }
 
 .button {
@@ -565,6 +535,9 @@ input#child {
 .list {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .check-infrastructure {
@@ -597,6 +570,8 @@ input#child {
   padding-left: 40px;
   cursor: pointer;
   display: inline-block;
+  vertical-align: center;
+
 }
 
 .filter-checkbox+label::after {
@@ -620,8 +595,12 @@ input#child {
   box-shadow: -4px 0px 6px rgba(255, 255, 255, 0.5);
 }
 
+.filter-checkbox:checked:disabled+label::after {
+  background-image: url(../img/checkbox-on-2.svg);
+}
+
 .filter-checkbox:disabled+label::after {
-  opacity: 0.5;
+  background-image: url(../img/checkbox-off-2.svg);
 }
 
 .prestige {
@@ -749,6 +728,7 @@ input#child {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  transform: translateX(-6px);
 }
 
 .btn-transparent:hover {
@@ -780,7 +760,10 @@ input#child {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin: 0;
   margin-left: 40px;
+  padding: 0;
+  list-style: none;
 }
 
 .sorting li {
@@ -794,6 +777,8 @@ input#child {
 
 .sorting a {
   color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  cursor: pointer;
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -852,6 +837,9 @@ input#child {
   flex-direction: column;
   justify-content: flex-start;
   align-self: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .catalog-item {
@@ -943,6 +931,7 @@ input#child {
 
 .btn {
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .btn:last-child {
@@ -992,8 +981,8 @@ input#child {
 
 .total-rating {
   background-color: #f2f2f2;
-  color: #000000;
-  padding: 5px 13px 6px 15px;
+  color: #666666;
+  padding: 5px 13px 11px 15px;
   line-height: 16px;
 }
 
@@ -1023,6 +1012,8 @@ input#child {
   font-size: 21px;
   color: #000000;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-copyright {
@@ -1031,6 +1022,8 @@ input#child {
   font-weight: normal;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .button-academy {
@@ -1043,6 +1036,9 @@ input#child {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .social li {
@@ -1081,6 +1077,11 @@ input#child {
   transform: translate(-50%, -50%);
 }
 
+.web {
+  color: #000000;
+  font-weight: normal;
+}
+
 .academy-logo {
   fill: #000000;
 }
@@ -1093,11 +1094,15 @@ input#child {
   fill: #bdbbbc;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   border: 0;
-  height: 0;
-  width: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
