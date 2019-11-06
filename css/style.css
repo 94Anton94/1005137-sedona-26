@@ -7,6 +7,15 @@ body {
   background-color: #f2f2f2;
 }
 
+img {
+  max-width: 100%
+}
+
+a {
+  text-decoration: none
+}
+
+
 .main-page {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -59,7 +68,6 @@ body {
 
 .site-navigation a {
   color: #000000;
-  text-decoration: none;
 }
 
 .site-navigation a:hover {
@@ -102,7 +110,7 @@ body {
   background-image: url(../img/background-photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #f2f2f2;
+  background-color: lightsteelblue;
   position: relative;
   padding-top: 79px;
   padding-bottom: 77px;
@@ -113,6 +121,8 @@ body {
 .intro-welcome {
   width: 459px;
   height: 353px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .welcome::after {
@@ -168,13 +178,14 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-size: auto;
-  background-color: #f2f2f2;
+  background-color: #81b3d2;
 }
 
 .feature-img-city {
   background-image: url(../img/pavilion.jpg);
   background-position: center right;
   width: 100%;
+  background-size: contain;
 }
 
 .feature-img-bridge {
@@ -182,6 +193,7 @@ body {
   background-position: center left;
   flex-direction: row-reverse;
   width: 100%;
+  background-size: contain;
 }
 
 span.number {
@@ -215,6 +227,7 @@ span.number {
 .features-icon {
   margin-top: 6px;
   margin-bottom: 30px;
+  vertical-align: top;
 }
 
 .features-list {
@@ -223,6 +236,8 @@ span.number {
   list-style: none;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 .interes {
@@ -241,10 +256,12 @@ span.number {
   line-height: 36px;
   color: #000000;
   margin-bottom: 24px;
+  margin-top: 0;
 }
 
 .option {
   color: #333333;
+  margin: 0;
 }
 
 .option-white {
@@ -276,6 +293,8 @@ span.number {
   background-color: #766357;
   position: relative;
   z-index: 1;
+  border: none;
+  outline: none;
 }
 
 .button-form-open:hover {
@@ -291,6 +310,7 @@ span.number {
 .form {
   text-align: center;
   padding: 56px;
+  padding-top: 54px;
   display: block;
   text-transform: uppercase;
   width: 568px;
@@ -345,7 +365,7 @@ span.number {
 .form-content label {
   font-weight: 600;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   text-align: left;
 }
 
@@ -433,11 +453,11 @@ span.number {
 
 .form-content-number {
   display: flex;
-  margin-left: 34px;
+  margin-left: 40px;
 }
 
 .form-content-number:last-child {
-  margin-left: 22px;
+  margin-left: 25px;
 }
 
 .adult,
@@ -463,6 +483,15 @@ span.number {
   background: #ebebeb;
 }
 
+.form-content .childs,
+.form-content .adults {
+  letter-spacing: normal;
+}
+
+.childs {
+  margin-left: auto;
+}
+
 .form-control {
   display: flex;
   flex-direction: column;
@@ -479,7 +508,7 @@ span.number {
   text-transform: uppercase;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 14px;
+  padding-left: 12px;
   outline: none;
   border: 2px solid transparent;
 }
@@ -501,9 +530,10 @@ span.number {
   padding-top: 15px;
   padding-bottom: 14px;
   color: #ffffff;
-  width: 460px;
+  width: 458px;
   border: 2px solid transparent;
-  background-color: #81b3d2
+  background-color: #81b3d2;
+  outline: none;
 }
 
 .button:hover {
@@ -521,7 +551,7 @@ span.number {
 
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(-52%);
   }
 
   10%,
@@ -529,14 +559,14 @@ span.number {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(-48%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(-52%);
   }
 }
 
@@ -586,7 +616,7 @@ span.number {
 }
 
 .list li {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .list li:last-child {
@@ -595,10 +625,9 @@ span.number {
 
 .filter-checkbox+label {
   position: relative;
-  padding-left: 40px;
+  padding-left: 41px;
   cursor: pointer;
-  display: inline-block;
-  vertical-align: center;
+  letter-spacing: 0.3px;
 }
 
 .filter-checkbox+label::after {
@@ -804,7 +833,6 @@ span.number {
 
 .sorting a {
   color: rgba(0, 0, 0, 0.3);
-  text-decoration: none;
   cursor: pointer;
   border-bottom: 1px dotted #81b3d2;
 }
@@ -874,7 +902,7 @@ span.number {
   flex-direction: row;
   justify-content: space-between;
   min-height: 150px;
-  padding: 25px 72px 24px 72px;
+  padding: 23px 72px 24px 72px;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -894,6 +922,7 @@ span.number {
   padding-right: 18px;
   text-transform: uppercase;
   background-color: #81b3d2;
+  outline: none;
 }
 
 .button-detail:hover {
@@ -917,13 +946,15 @@ span.number {
   padding-right: 17px;
   text-transform: uppercase;
   background-color: #766357;
+  outline: none;
 }
 
 .button-reservation:hover {
   background-color: #604e43;
 }
 
-.button-reservation:focus .button-reservation:active {
+.button-reservation:focus,
+.button-reservation:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -983,7 +1014,7 @@ span.number {
 
 .hotel-price span,
 .hotel-type span {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .title-hotel:hover {
@@ -1005,6 +1036,11 @@ span.number {
 
 .star {
   margin-top: 5px;
+}
+
+.star svg,
+.star img {
+  margin-left: 2px;
 }
 
 .total-rating {
@@ -1072,7 +1108,6 @@ span.number {
 .social li {
   width: 46px;
   height: 48px;
-  background: #81b3d2;
   position: relative;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -1083,12 +1118,17 @@ span.number {
   margin-right: 0;
 }
 
-.social li:hover {
+.social-button {
+  background: #81b3d2;
+  outline: none;
+}
+
+.social-button:hover {
   background: #669ec0;
 }
 
-.social li:focus,
-.social li:active {
+.social-button:focus,
+.social-button:active {
   background: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1104,6 +1144,11 @@ span.number {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.social-button:focus img,
+.social-button:active img {
+  opacity: 0.3;
 }
 
 .web {
@@ -1123,7 +1168,7 @@ span.number {
   fill: #bdbbbc;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
